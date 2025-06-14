@@ -1,33 +1,33 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(myApp());
+  runApp(const MYAPP());
 }
 
-class myApp extends StatelessWidget {
-  myApp();
+class MYAPP extends StatelessWidget {
+  const MYAPP();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: Center(
           child: Container(
-            child: Text("markting"),
-            width: 150,
-            height: 150,
-            color: const Color.fromARGB(255, 243, 107, 33),
+            child: Center(child: Text("app")),
+            width: 70,
+            height: 50,
+            color: Color.fromARGB(255, 219, 127, 175),
           ),
         ),
         appBar: AppBar(
           title: Text("nada"),
-
-          backgroundColor: const Color.fromARGB(255, 221, 198, 234),
+          backgroundColor: Color.fromARGB(255, 203, 142, 180),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.add),
-          backgroundColor: const Color.fromARGB(255, 211, 166, 196),
+          backgroundColor: const Color.fromARGB(255, 203, 142, 180),
+          child: Icon(Icons.add_circle, color: Colors.white, size: 50.0),
         ),
       ),
     );
