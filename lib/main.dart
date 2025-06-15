@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(const MYAPP());
+  runApp(const MyApp());
 }
 
-class MYAPP extends StatelessWidget {
-  const MYAPP();
+class MyApp extends StatelessWidget {
+  const MyApp();
 
   @override
   Widget build(BuildContext context) {
@@ -14,20 +13,21 @@ class MYAPP extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Container(
-            child: Center(child: Text("app")),
-            width: 70,
-            height: 50,
-            color: Color.fromARGB(255, 219, 127, 175),
+            child: Center(child: Text("hello world app")),
+            width: 300,
+            height: 300,
+            color: const Color.fromARGB(255, 193, 170, 224),
           ),
         ),
+
         appBar: AppBar(
-          title: Text("nada"),
-          backgroundColor: Color.fromARGB(255, 203, 142, 180),
+          title: Text("My First App"),
+          backgroundColor: const Color.fromARGB(255, 193, 170, 224),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          backgroundColor: const Color.fromARGB(255, 203, 142, 180),
-          child: Icon(Icons.add_circle, color: Colors.white, size: 50.0),
+          backgroundColor: const Color.fromARGB(255, 193, 170, 224),
+          child: const Icon(Icons.add, color: Colors.white, size: 30),
         ),
       ),
     );
